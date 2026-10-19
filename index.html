@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#190f20">
+  <title>Happy Birthday, Nikita ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/music/your-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="loader" class="loader">
+    <div class="loader-card">
+      <p class="eyebrow">A little surprise made just for you</p>
+      <h1>For Nikita ❤️</h1>
+      <p>Made with love by Avinash</p>
+      <button id="startBtn" class="button">Begin Our Story ✨</button>
+      <p class="tiny-note">Turn your sound on for the full experience.</p>
+    </div>
+  </div>
+
+  <div class="hearts" aria-hidden="true"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <main id="mainContent" class="container">
+    <nav class="topbar">
+      <span class="brand">A little love note ♡</span>
+      <button id="musicBtn" class="music-button" aria-label="Play or pause background music">♫ Music: Off</button>
+    </nav>
+
+    <section class="hero section-card">
+      <img src="assets/images/hero.jpeg" class="heroImage clickable-photo" alt="A favourite photo of Nikita">
+      <div class="overlay">
+        <p class="eyebrow">Today is all about you</p>
+        <h2>Happy Birthday</h2>
+        <h1>Nikita ❤️</h1>
+        <p>Today isn't just another day.<br>It's the day someone wonderful came into this world.</p>
+        <a href="#story" class="button button-link">Let's look back ↓</a>
+      </div>
+    </section>
+
+    <section id="story" class="story section-card">
+      <p class="eyebrow">A tiny trip down memory lane</p>
+      <h2>Every Beautiful Story Starts Somewhere...</h2>
+      <img src="assets/images/childhood.jpeg" class="storyImage clickable-photo" alt="A childhood memory">
+      <p>This little human had no idea how many smiles, memories, and beautiful moments they would bring into the lives of the people around them.</p>
+      <p class="handwritten">And I'm so glad our paths crossed. ♡</p>
+    </section>
+
+    <section class="timeline section-card">
+      <p class="eyebrow">The moments that matter</p>
+      <h2>Our Story ❤️</h2>
+      <div class="timeline-list">
+        <article class="memory-card">
+          <span class="memory-dot">♡</span>
+          <h3>Our first conversation</h3>
+          <p> 2011 :)</p>
+        </article>
+        <article class="memory-card">
+          <span class="memory-dot">✦</span>
+          <h3>A day I'll always remember</h3>
+          <p>The day of proposal, Our first trip to Hampi and ofc my 25th Birthday Celebration <3 </p>
+        </article>
+        <article class="memory-card">
+          <span class="memory-dot">♥</span>
+          <h3>More memories to come</h3>
+          <p>This is only one chapter of a story I'm grateful to be part of.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section-card">
+      <p class="eyebrow">A collection of little moments</p>
+      <h2>My Favourite Pictures of Us ❤️</h2>
+      <p class="section-intro">Tap any photo to see it a little closer.</p>
+      <div class="grid">
+        <img src="assets/images/photo1.jpeg" alt="Memory photo 1" class="clickable-photo">
+        <img src="assets/images/photo2.jpeg" alt="Memory photo 2" class="clickable-photo">
+        <img src="assets/images/photo3.jpeg" alt="Memory photo 3" class="clickable-photo">
+        <img src="assets/images/photo4.jpeg" alt="Memory photo 4" class="clickable-photo">
+        <img src="assets/images/photo5.jpeg" alt="Memory photo 5" class="clickable-photo">
+        <img src="assets/images/photo6.jpeg" alt="Memory photo 6" class="clickable-photo">
+        <img src="assets/images/photo7.jpeg" alt="Memory photo 7" class="clickable-photo">
+        <img src="assets/images/photo8.jpeg" alt="Memory photo 8" class="clickable-photo">
+      </div>
+    </section>
+
+    <section class="ending section-card">
+      <p class="eyebrow">Before you go...</p>
+      <h2>One Last Thing</h2>
+      <p>There is one more little message waiting for you.</p>
+      <button id="surprise" class="button">Click Me ❤️</button>
+      <div id="finalMessage" class="final-message" hidden>
+        <div class="confetti-heart">♥</div>
+        <h2>Happy Birthday, Nikita!</h2>
+        <p>May this year bring you the kind of happiness you give to others.</p>
+        <p>Keep being wonderfully, unapologetically you.</p>
+        <h3>Today. Tomorrow. Always. ❤️</h3>
+      </div>
+    </section>
+
+    <footer>Made with love, just for you ✨</footer>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-modal="true" role="dialog" aria-label="Enlarged photograph" hidden>
+    <button id="closeLightbox" class="close-lightbox" aria-label="Close photo">×</button>
+    <img id="lightboxImage" src="" alt="Enlarged memory">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
